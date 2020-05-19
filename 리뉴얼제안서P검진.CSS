@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap{
+    margin: 0 auto;
+    /* border: 1px solid white; */
+}
+header{
+    width: 100%;
+}
+
+#header{
+    width: 100%
+    /* border: 1px solid blue; */
+}
+
+#header>li{
+float: right;
+margin:10px;
+
+}
+#header>li a{
+   color: black;
+}
+
+
+
+
+nav{
+    height: 70px;
+    background-color: #8b161c;
+}
+header img{
+    float: left;
+    /* margin-top: 30px; */
+}
+nav>ul{
+float: left;
+margin-top: 20px;
+    /* border: 1px solid yellow; */
+}
+nav>ul>li{
+    float: left;
+    width: 150px;
+    position: relative;
+    text-align: center;
+    left: 110px;
+    margin: 0 60px;
+    border: 4px solid transparent;
+
+}
+nav>ul>li:hover{
+    border-bottom-color:rgba(0, 0, 0, 0.692);
+}
+nav>ul>li>a{
+    color: white;
+    display: inline-block;
+width: 120px;
+height: 30px;
+font-weight: bold;
+    font-size: large;
+}
+
+nav ul li ul{
+opacity: 0.8;
+    padding-top: 40px;
+    padding: 10px;
+    position: absolute;
+    display: none;
+    background-color: gray;
+    top: 35px;
+    
+}
+nav>ul>li>ul>li{
+    margin: 10px 0;
+
+}
+nav>ul>li>ul>li>a{
+   color: black;
+}
+#main{
+    border: 1px solid black;
+    height: 330px;
+    text-align: right;
+}
+
+ h1{
+    padding: 20px;
+}
+#aside1{
+    
+    position: fixed;
+    top: 110px;
+    bottom: 0;
+}
+#aside1 ul{
+    float: left;
+    margin-top: 10px;
+}
+#aside1 ul li{
+    background-color: gainsboro;
+    border: 1px solid white;
+    padding:15px 0;
+    width: 200px;
+}
+#aside1 ul li a{
+    color: black;
+    font-weight: bold;
+    padding:20px;
+}
+#aside1 ul li:first-child{
+    background-color: #8b161c;
+}
+/**/
+div.tab{
+    width: 700px;
+    position: relative;
+    top: 100px;
+    border: 1px solid black;
+}
+.tabs{
+    float: left;
+    width: 780px;
+margin-left: 220px;
+margin-top: 10px;
+ position: relative;
+}
+.tt{
+    width: 250px;
+    float: left;
+    /* border: 1px solid red; */
+}
+.tabs label{
+    /* label 인라인 속성임 */
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    margin-left: 20px;
+    width: 250px;
+    font-weight: bold;
+    /* background-color: #838487; */
+     /* border: 1px solid blue; */
+     border-top: 1px solid  #8b161c;
+     border-left: 1px solid  #8b161c;
+     border-right: 1px solid  #8b161c;
+     cursor: pointer;
+     /* cusor가 화살표가 아닌 손모양으로 바뀜 */
+}
+.tabs .tab{
+    position: absolute;
+    /* 자기 자리에서 빠져나온 상태 float와 
+    비슷하게 보임 즉 좌표값을 따로 입력해야 원하는 
+    위치로 이동시킬 수 있음*/
+left:0;
+    width: 100%;
+    /* 부모인 tabs의 크기와 맞추기위해 100%입력 했지만,
+    300px로 입력해도 됨 */
+    display:none;
+}
+.tab h2{
+    margin: 20px;
+    padding: 10px 0;
+    border-top:3px solid green;
+    width: 250px;
+}
+.tab img{
+    float: left;
+    /* display: inline; */
+}
+.tabs input[type="radio"]
+{
+    display:none;
+}
+/* 인접선택자:선택자A+선택자B 
+선택자 A 바로다음에 오는 선택자B를 선택해줌 */
+.tabs input[type="radio"]:checked+label
+{
+background-color: rgba(220, 220, 220, 0.644);
+}
+.tabs input[type="radio"]:checked+label+.tab
+{
+    display: block;
+}
+.p1,.p2{
+    padding-top: 70px;
+}
+.p1{
+margin-left: 10px;
+}
+#aside2{
+    position: fixed;
+    top:160px;
+    right: 270px;
+}
+#aside2 ul{
+    width: 90px;
+    border: 1px solid palevioletred;
+    margin-top: 70px;
+}
+#aside2 ul li{
+    padding:0 10px;
+    margin-bottom: 30px;
+}
+#aside2 ul li img{
+    display:block;
+    float: none;
+    /* font-size: 13px; */
+}
+#aside2 ul li:not(:nth-child(1)) a{
+    font-size: 12px;
+}
+#aside2 ul li:first-child a{
+    display:block;
+    background-color: gainsboro;
+    height: 25px;
+    /* width: 65px; */
+    font-size: 14px;
+    padding-top:5px ;
+}
